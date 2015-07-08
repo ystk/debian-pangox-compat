@@ -1,0 +1,38 @@
+pangox-compat (0.0.2-5) unstable; urgency=medium
+
+  * Use dh-autoreconf during build to support newer architectures.
+    Closes: #755909
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 02 Sep 2014 12:37:51 +0200
+
+pangox-compat (0.0.2-4) unstable; urgency=low
+
+  * Add Breaks/Replaces: libpango1.0-0 (<< 1.32.5-2) for libpangox-1.0-0 and
+    Breaks/Replaces: libpango1.0-dev (<< 1.32.5-2) for libpangox-1.0-dev to
+    ensure proper upgrades after the package split. Closes: #709458
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 23 May 2013 16:02:31 +0200
+
+pangox-compat (0.0.2-3) unstable; urgency=low
+
+  * Upload to unstable
+  * Fix Vcs-* URLs, pangox-compat is in the attic branch.
+  * Bump Standards-Version to 3.9.4. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Tue, 21 May 2013 22:00:08 +0200
+
+pangox-compat (0.0.2-2) experimental; urgency=low
+
+  * debian/control.in:
+    + Bump libpango1.0-dev build dependency requirement to ensure
+      a dependency on the new libpango split packages so that the
+      old libpango1.0-0 can depend on libpangox-1.0-0 without a
+      dependency loop.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 09 Apr 2013 18:39:25 +0200
+
+pangox-compat (0.0.2-1) experimental; urgency=low
+
+  * Initial release. Closes: #704021.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 26 Mar 2013 23:28:25 +0100
